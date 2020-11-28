@@ -31,3 +31,7 @@ h1 {
 h5 {
     cursor: pointer;
 }
+
+.fa-clipboard  {
+    font-size: 2rem;
+}

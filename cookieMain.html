@@ -1,4 +1,4 @@
-<!--Random Cookie Colors-->
+<!--Random Cookie Colors RGB Picker-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@
     <title>Cookie Colors</title>
 
     <!--CUSTOM STYLE SHEET-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cookie_style.css">
 
     <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/575868ac71.js" crossorigin="anonymous"></script>
@@ -31,11 +31,13 @@
                 <i class="fas fa-cookie-bite" id="cookie"></i>
             </div>
 
-            <!--Badge to show (rgb) coloring-->
+            <!--Textarea to show (rgb) coloring code-->
             <div class="row justify-content-center pb-5">
-                <h5><span class="badge badge-pill badge-light" id="colorTxt" title="RGB Color"></span></h5>
+                <textarea readonly id="colorTxt" rows="1" style="text-align: center;"></textarea>&nbsp;
+                <i class="fas fa-clipboard" type="button" id="copyTxt" value="Copy Color" onclick="copyColor()" title="Copy Color"></i>
             </div>
-            
+
+            <!--Title-->
             <div class="row justify-content-center pb-3">
                 <h1>Cookie Colors</h1>
             </div>
@@ -47,7 +49,12 @@
 
         </div>
     </div>
+
+    <!--Copyright-->
+    <div class="footer-copyright text-center py-3">© 2020 Liv Warner</div>
     
-            <script type="text/javascript" src="cookie.js"></script>
+    
+    <!--Script-->
+    <script type="text/javascript" src="cookie.js"></script>
 </body>
 </html>
